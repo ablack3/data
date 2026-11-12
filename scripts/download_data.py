@@ -8,6 +8,8 @@ from pathlib import Path
 import time
 import urllib.parse
 import urllib.request
+import subprocess
+import sys
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,3 +91,4 @@ with (RAW / 'track3/portwatch.csv').open('w', newline='') as stream:
     writer.writerows(pages)
 (ROOT / 'download_manifest.json').write_text(json.dumps(manifest, indent=2))
 print(f'Download complete: {len(pages)} IMF rows, no pagination truncation.', flush=True)
+subprocess.run([sys.executable, str(ROOT / 'scripts/download_track4.py')], check=True)

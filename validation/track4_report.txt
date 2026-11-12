@@ -1,0 +1,5 @@
+PASS: source CSV parses without missing values; 16 unique issue labels.
+PASS: 48 unique issue/group records; percentages are between 0 and 100.
+PASS: long-to-wide reconstruction exactly matches all source-derived values.
+Output: issue_priorities 48 x 4; issue_priorities_wide 16 x 5.
+No respondent-level data, subgroup sample sizes or standard errors are provided in this chart table.

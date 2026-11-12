@@ -24,3 +24,8 @@ gss_ideology <- gss[!is.na(gss$polviews), ]
 # Track 3 keys: portid + date. n_total already includes tankers and cargo.
 # Example corridor selection, with no event effect calculated for you:
 hormuz <- shipping[shipping$portname == 'Strait of Hormuz', ]
+
+# Bonus Track 4: published group percentages, not respondent records.
+issues <- readRDS('data/track4/issue_priorities.rds')
+# Multiple issues may be important to the same voters; do not sum percentages.
+# No causal election-outcome or individual-level prediction claims are supported.

@@ -1,0 +1,49 @@
+issue_id,issue,voter_group,percent_very_important
+1,The economy,all_registered_voters,84
+1,The economy,republican_candidate_supporters,82
+1,The economy,democratic_candidate_supporters,88
+2,The future of democracy,all_registered_voters,73
+2,The future of democracy,republican_candidate_supporters,69
+2,The future of democracy,democratic_candidate_supporters,85
+3,Healthcare,all_registered_voters,68
+3,Healthcare,republican_candidate_supporters,53
+3,Healthcare,democratic_candidate_supporters,82
+4,Education,all_registered_voters,62
+4,Education,republican_candidate_supporters,48
+4,Education,democratic_candidate_supporters,74
+5,Immigration,all_registered_voters,59
+5,Immigration,republican_candidate_supporters,72
+5,Immigration,democratic_candidate_supporters,53
+6,Foreign policy,all_registered_voters,57
+6,Foreign policy,republican_candidate_supporters,56
+6,Foreign policy,democratic_candidate_supporters,64
+7,Energy policy,all_registered_voters,54
+7,Energy policy,republican_candidate_supporters,48
+7,Energy policy,democratic_candidate_supporters,62
+8,Violent crime,all_registered_voters,52
+8,Violent crime,republican_candidate_supporters,64
+8,Violent crime,democratic_candidate_supporters,37
+9,Abortion,all_registered_voters,46
+9,Abortion,republican_candidate_supporters,43
+9,Abortion,democratic_candidate_supporters,49
+10,Gun policy,all_registered_voters,45
+10,Gun policy,republican_candidate_supporters,54
+10,Gun policy,democratic_candidate_supporters,40
+11,Artificial intelligence (AI),all_registered_voters,44
+11,Artificial intelligence (AI),republican_candidate_supporters,34
+11,Artificial intelligence (AI),democratic_candidate_supporters,54
+12,Size and scope of the federal government,all_registered_voters,43
+12,Size and scope of the federal government,republican_candidate_supporters,57
+12,Size and scope of the federal government,democratic_candidate_supporters,35
+13,Environment and climate policy,all_registered_voters,41
+13,Environment and climate policy,republican_candidate_supporters,15
+13,Environment and climate policy,democratic_candidate_supporters,66
+14,Investigations into Trump and his administration,all_registered_voters,36
+14,Investigations into Trump and his administration,republican_candidate_supporters,7
+14,Investigations into Trump and his administration,democratic_candidate_supporters,63
+15,Issues around race and ethnicity,all_registered_voters,36
+15,Issues around race and ethnicity,republican_candidate_supporters,18
+15,Issues around race and ethnicity,democratic_candidate_supporters,52
+16,"Policies related to gay, lesbian or transgender people",all_registered_voters,23
+16,"Policies related to gay, lesbian or transgender people",republican_candidate_supporters,14
+16,"Policies related to gay, lesbian or transgender people",democratic_candidate_supporters,35

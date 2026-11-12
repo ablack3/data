@@ -1,0 +1,8 @@
+variable,meaning
+issue_id,Stable local identifier in source chart order (1-16).
+issue,Issue label as published by Pew.
+voter_group,All registered voters or supporters of a Republican/Democratic congressional candidate.
+percent_very_important,Published rounded percentage (0-100); not a respondent count.
+all_registered_voters,Wide-table percentage for all registered voters.
+republican_candidate_supporters,Wide-table percentage for Republican candidate supporters.
+democratic_candidate_supporters,Wide-table percentage for Democratic candidate supporters.

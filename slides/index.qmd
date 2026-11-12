@@ -1,5 +1,5 @@
 ---
-pagetitle: "Analysis-a-thon | Three tracks"
+pagetitle: "Analysis-a-thon | Three tracks and a bonus"
 format:
   revealjs:
     theme: [default, theme.scss]
@@ -24,7 +24,7 @@ execute:
 ## Analysis-a-thon {.overview background-color="#1F1F1F"}
 
 ::: {.lead}
-Three tracks. One prize.
+Three tracks + a bonus. One prize.
 :::
 
 :::: {.columns}
@@ -39,6 +39,9 @@ Three tracks. One prize.
 
 **03  Shipping during the Hormuz disruption**  
 34,428 daily records across 12 chokepoints
+
+**04  Bonus: issues in the 2026 midterms**  
+16 issues across three voter groups
 :::
 
 ::: {.column width="42%"}
@@ -158,4 +161,35 @@ Sources: UN Global Platform / [IMF PortWatch](https://portwatch.imf.org/). [Even
 
 ::: {.notes}
 The source is the IMF ArcGIS Daily_Chokepoints_Data table, downloaded November 12, 2026. All 34,428 rows were retrieved with pagination. Each of the 12 chokepoints has 2,869 consecutive observations. The wide table key is portid + date. n_cargo is the sum of four non-tanker cargo categories, and n_total = n_cargo + n_tanker. The long table excludes subtotals to prevent double counting. Capacity fields remain in raw source data but are excluded from these analysis tables. This is a disruption analysis, not an assumption that the strait was continuously fully closed. Use declared pre/post windows and avoid causal claims unsupported by the design.
+:::
+
+## Bonus Track 4: issues in the 2026 midterms
+
+::: {.question}
+Which issues united or divided voters before the 2026 midterms?
+:::
+
+**Pew Research Center** published issue priorities for **all registered voters** and supporters of **Republican or Democratic congressional candidates**.
+
+| Table | Rows × columns | One row represents | Download |
+|:---|---:|:---|:---|
+| `issue_priorities` | 48 × 4 | One issue and voter group | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities.rds) |
+| `issue_priorities_wide` | 16 × 5 | One issue, with three group estimates | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities_wide.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities_wide.rds) |
+
+```r
+issues <- readRDS("data/track4/issue_priorities.rds")
+```
+
+**Measure:** percentage saying each issue was *very important* to their vote. Survey dates: **September 28–October 4, 2026**. Compare priorities or percentage-point gaps.
+
+::: {.caveat}
+Aggregate pre-election estimates, not exit-poll respondents or actual votes. Multiple issues can be important. These data cannot establish what caused the election result.
+:::
+
+::: {.source}
+Source: [Pew's issue-priority table](https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/). [Dataset notes](https://github.com/ablack3/data/blob/main/data/track4/README.md).
+:::
+
+::: {.notes}
+Optional, smaller visualization track. The verified published table includes 16 issues, not 11. Each of 48 observations is a rounded issue-by-group percentage, not a respondent. All registered voters overlaps the supporter groups, and their percentages need not equal an unweighted average of the two supporter percentages. Percentages are not exclusive across issues. This table does not supply subgroup denominators, standard errors or the joint responses needed for individual-level models. Programmatic extraction of the publisher's chart JSON matched its HTML table exactly. No unverified NBC/Mehlman exit-poll figures were added.
 :::

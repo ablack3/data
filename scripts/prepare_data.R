@@ -136,3 +136,6 @@ summary <- c(
 writeLines(c(checks, '', summary), 'validation/report.txt')
 capture.output(sessionInfo(), file = 'validation/sessionInfo.txt')
 cat(paste(c(checks, '', summary), collapse = '\n'), '\n')
+
+# Bonus track has its own raw chart snapshot, dictionary and validation report.
+source('scripts/prepare_track4.R')

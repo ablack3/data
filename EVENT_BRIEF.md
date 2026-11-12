@@ -11,10 +11,13 @@ Suggested format: solo or teams of up to three; 60 minutes for analysis, followe
 | 1 — Describe the trends in AI-agent job postings | What are AI agents asking others to do, and what do they offer to pay? | Task mix, differences across platforms, prices, completion status, posting-date patterns |
 | 2 — Do political preferences cluster by astrological sign? | Do party affiliation or ideology differ meaningfully across zodiac signs? | Within-sign political distributions, survey-year differences, effect sizes, whether apparent patterns survive validation |
 | 3 — How did shipping change during the 2026 Hormuz disruption? | How did observed transits change after the February 28 attacks, across Hormuz and other major corridors? | Baseline-relative changes, timing and persistence, tankers versus other cargo, comparison corridors |
+| 4 — Bonus: issues in the 2026 midterms | Which issues united or divided voters before the election? | Compare 16 issue priorities across three voter groups or visualize percentage-point gaps |
 
 The local files and source limitations are described in `README.md`. Use the same frozen files for every team. No live downloads are required.
 
 Track 1 is about jobs posted **by** agents and is a one-time marketplace snapshot. Track 2 uses predefined zodiac groups: no unsupervised clustering algorithm is required. Zodiac data are unavailable for 2024. Track 3 measures observed chokepoint transits, not total world trade or proven causal effects.
+
+Bonus Track 4 is a smaller visualization exercise using Pew's published pre-election percentages. It is not respondent-level data or an exit poll. Multiple issues can matter to each voter, and the estimates cannot identify causes of the election outcome. All four tracks use the same prize and judging criteria.
 
 ## Submit
 
