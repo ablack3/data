@@ -1,5 +1,5 @@
 ---
-pagetitle: "Analysis-a-thon | Three tracks and a bonus"
+pagetitle: "Analysis-a-thon | Four tracks"
 format:
   revealjs:
     theme: [default, theme.scss]
@@ -24,7 +24,7 @@ execute:
 ## Analysis-a-thon {.overview background-color="#1F1F1F"}
 
 ::: {.lead}
-Three tracks + a bonus. One prize.
+Four tracks. One prize.
 :::
 
 :::: {.columns}
@@ -40,7 +40,7 @@ Three tracks + a bonus. One prize.
 **03  Shipping during the Hormuz disruption**  
 34,428 daily records across 12 chokepoints
 
-**04  Bonus: issues in the 2026 midterms**  
+**04  Issues in the 2026 midterms**\
 113,020 respondents; 12 issue priorities
 :::
 
@@ -163,7 +163,7 @@ Sources: UN Global Platform / [IMF PortWatch](https://portwatch.imf.org/). [Even
 The source is the IMF ArcGIS Daily_Chokepoints_Data table, downloaded November 12, 2026. All 34,428 rows were retrieved with pagination. Each of the 12 chokepoints has 2,869 consecutive observations. The wide table key is portid + date. n_cargo is the sum of four non-tanker cargo categories, and n_total = n_cargo + n_tanker. The long table excludes subtotals to prevent double counting. Capacity fields remain in raw source data but are excluded from these analysis tables. This is a disruption analysis, not an assumption that the strait was continuously fully closed. Use declared pre/post windows and avoid causal claims unsupported by the design.
 :::
 
-## Bonus Track 4: issues in the 2026 midterms
+## Track 4: issues in the 2026 midterms
 
 ::: {.question}
 Which issues do voters prioritize together—and how does this differ by party?
