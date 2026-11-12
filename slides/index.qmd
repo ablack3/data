@@ -1,0 +1,161 @@
+---
+pagetitle: "Analysis-a-thon | Three tracks"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1600
+    height: 900
+    margin: 0.07
+    center: false
+    slide-number: true
+    transition: none
+    navigation-mode: linear
+    controls: true
+    progress: true
+    hash: true
+    history: true
+    embed-resources: true
+    code-copy: true
+    footer: "[Data & instructions](https://github.com/ablack3/data)"
+execute:
+  enabled: false
+---
+
+## Analysis-a-thon {.overview background-color="#1F1F1F"}
+
+::: {.lead}
+Three tracks. One prize.
+:::
+
+:::: {.columns}
+::: {.column width="54%"}
+### Choose a track
+
+**01  AI-agent job postings**  
+449 postings across four marketplaces
+
+**02  Politics and astrological signs**  
+64,451 respondents with zodiac signs
+
+**03  Shipping during the Hormuz disruption**  
+34,428 daily records across 12 chokepoints
+:::
+
+::: {.column width="42%"}
+### Schedule
+
+| Activity | Minutes |
+|:---|---:|
+| Intro | 10 |
+| Analysis | 60 |
+| Presentations* | 24 |
+| Ranked-choice voting | 5 |
+| Prize awarding | 5 |
+
+::: {.small}
+*Six teams, 3-minute talks + 1-minute transitions. Total: 1 h 44 min.
+:::
+:::
+::::
+
+::: {.start}
+[Download the project](https://github.com/ablack3/data/archive/refs/heads/main.zip), open `analysis-a-thon.Rproj`, then run `source("starter.R")`. CSV + RDS files work offline. The organizer will create the [RCV123 ballot](https://www.rcv123.org/) during analysis time.
+:::
+
+::: {.notes}
+The schedule assumes six teams; add or subtract four minutes per team. A defensible null finding can win. The ballot is not yet created. Recommended settings are one overall contest, one winner and results hidden until voting closes. The project contains the datasets and a starter script; participants do not need to install socviz or fetch data.
+:::
+
+## Trends in AI-agent job postings
+
+::: {.question}
+What work do AI agents post, and how do task mix and pay vary?
+:::
+
+Cleaned postings from **RentAHuman, Taskmarket, Claw Earn and BasedAgents**. These platforms label the posters as AI agents.
+
+| Table | Rows × columns | One row represents | Download |
+|:---|---:|:---|:---|
+| `tasks` | 449 × 28 | One job posting | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track1/tasks.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track1/tasks.rds) |
+| `platforms` | 4 × 20 | One marketplace | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track1/platforms.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track1/platforms.rds) |
+| `task_tags` | 857 × 3 | One tag on one posting | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track1/task_tags.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track1/task_tags.rds) |
+
+```r
+tasks <- readRDS("data/track1/tasks.rds")
+```
+
+**Coverage:** February 4–September 14, 2026. Join tasks and tags on `platform` + `task_id`.
+
+::: {.caveat}
+A single marketplace snapshot limits time-trend claims. Seven prices are missing. Completion does not confirm payment.
+:::
+
+::: {.source}
+Source: [trends-in-agent-hiring](https://github.com/ablack3/trends-in-agent-hiring). [Data dictionary](https://github.com/ablack3/data/blob/main/data/track1/source_dictionary.md).
+:::
+
+::: {.notes}
+The source snapshot is September 14, 2026, commit 9f53734cdea0e890f228394c2a8ea186550ef863. Taskmarket supplies 389 of the 449 postings. Task types can be keyword-derived. Unknown payout confirmations remain missing for 420 rows, and three rows carry a test/spam flag. The tags table is one-to-many, so joining it to tasks can duplicate posting-level measures. price_usd retains upstream treatment of USD/USDC. Source terms include restrictions on RentAHuman scraping and redistribution. These files are downloaded from the existing cleaned repository.
+:::
+
+## Political preferences by astrological sign
+
+::: {.question}
+Do political preferences cluster by astrological sign?
+:::
+
+The **General Social Survey**, from `socviz::gss_lon`. Includes zodiac sign, party ID, political ideology, demographics, survey weights and design variables.
+
+| Table | Rows × columns | One row represents | Download |
+|:---|---:|:---|:---|
+| `gss_politics` | 64,451 × 16 | One respondent with a zodiac sign | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track2/gss_politics.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track2/gss_politics.rds) |
+| `gss_lon` | 75,699 × 25 | One respondent in the full extract | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track2/gss_lon.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track2/gss_lon.rds) |
+
+```r
+gss <- readRDS("data/track2/gss_politics.rds")
+```
+
+**Zodiac coverage:** 1976–2022. Party ID is available for **64,112** respondents and ideology for **58,367**. The row key is `year` + `id`.
+
+::: {.caveat}
+All 2024 zodiac values are missing. Account for survey year and design when making population claims. An association would not establish an astrological mechanism.
+:::
+
+::: {.source}
+Source: [socviz / GSS](https://kjhealy.github.io/socviz/reference/gss_lon.html). Local RDS files require no socviz installation. [Dictionary](https://github.com/ablack3/data/blob/main/data/track2/dictionary.csv).
+:::
+
+::: {.notes}
+Package source commit f285a44959705860f8d042fbda1c2d054c9c8eb4, development version 2.0.0.9000. Full extract spans 1972–2024, but the usable zodiac subset ends in 2022. Both political outcomes are available for 58,143 respondents. The subset preserves original category labels, wtssps, wtssall, vpsu and vstrat. Clustering in the question means differences across predefined sign groups; an unsupervised clustering algorithm is not required. Avoid searching across many outcomes without accounting for multiple comparisons or testing on held-out data.
+:::
+
+## Shipping during the Hormuz disruption
+
+::: {.question}
+How did shipping change after the February 28, 2026 attacks on Iran?
+:::
+
+**IMF PortWatch** daily AIS-observed transits through **Hormuz and 11 other chokepoints**, including Suez, Bab el-Mandeb and the Cape of Good Hope.
+
+| Table | Rows × columns | One row represents | Download |
+|:---|---:|:---|:---|
+| `chokepoints_daily` | 34,428 × 10 | One chokepoint on one date | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track3/chokepoints_daily.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track3/chokepoints_daily.rds) |
+| `chokepoints_by_ship_type` | 172,140 × 5 | One ship type, chokepoint and date | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track3/chokepoints_by_ship_type.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track3/chokepoints_by_ship_type.rds) |
+
+```r
+shipping <- readRDS("data/track3/chokepoints_daily.rds")
+```
+
+**Coverage:** January 1, 2019–November 8, 2026, with no daily gaps. Five ship types: tankers, container ships, dry bulk, general cargo and roll-on/roll-off.
+
+::: {.caveat}
+AIS counts can miss crossings. A ship can cross several chokepoints. Comparison corridors are not automatically unaffected controls.
+:::
+
+::: {.source}
+Sources: UN Global Platform / [IMF PortWatch](https://portwatch.imf.org/). [Event-date reference: IMF April 2026 outlook](https://www.imf.org/-/media/files/publications/reo/mcd-cca/2026/april/english/text.pdf).
+:::
+
+::: {.notes}
+The source is the IMF ArcGIS Daily_Chokepoints_Data table, downloaded November 12, 2026. All 34,428 rows were retrieved with pagination. Each of the 12 chokepoints has 2,869 consecutive observations. The wide table key is portid + date. n_cargo is the sum of four non-tanker cargo categories, and n_total = n_cargo + n_tanker. The long table excludes subtotals to prevent double counting. Capacity fields remain in raw source data but are excluded from these analysis tables. This is a disruption analysis, not an assumption that the strait was continuously fully closed. Use declared pre/post windows and avoid causal claims unsupported by the design.
+:::

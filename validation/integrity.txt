@@ -1,0 +1,3 @@
+PASS: 45 downloaded source hashes match.
+PASS: 65 data files checksummed.
+PASS: starter.R ran offline with exit code 0.

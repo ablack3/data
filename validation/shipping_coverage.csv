@@ -1,0 +1,13 @@
+portid,portname,rows,first_date,last_date,expected_days
+chokepoint1,Suez Canal,2869,2019-01-01,2026-11-08,2869
+chokepoint11,Taiwan Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint14,Luzon Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint15,Lombok Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint19,Sunda Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint2,Panama Canal,2869,2019-01-01,2026-11-08,2869
+chokepoint3,Bosporus Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint4,Bab el-Mandeb Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint5,Malacca Strait,2869,2019-01-01,2026-11-08,2869
+chokepoint6,Strait of Hormuz,2869,2019-01-01,2026-11-08,2869
+chokepoint7,Cape of Good Hope,2869,2019-01-01,2026-11-08,2869
+chokepoint8,Gibraltar Strait,2869,2019-01-01,2026-11-08,2869

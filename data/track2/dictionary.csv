@@ -1,0 +1,26 @@
+variable,class,source_label,levels_in_order
+year,integer,,
+id,integer,,
+ballot,integer,,
+age,integer,,
+degree,factor,r's highest degree,Less than High School | High School | Associate / Jr College | Bachelor's | Graduate
+race,factor,race of respondent,White | Black | Other
+sex,factor,respondents sex,Male | Female
+siblings,factor,,0 | 1 | 2 | 3 | 4 | 5 | 6+
+kids,factor,,0 | 1 | 2 | 3 | 4+
+bigregion,factor,region of interview,Northeast | Midwest | South | West
+income16,factor,total family income,"under $1,000 | $1,000 to $2,999 | $3,000 to $3,999 | $4,000 to $4,999 | $5,000 to $5,999 | $6,000 to $6,999 | $7,000 to $7,999 | $8,000 to $9,999 | $10,000 to $12,499 | $12,500 to $14,999 | $15,000 to $17,499 | $17,500 to $19,999 | $20,000 to $22,499 | $22,500 to $24,999 | $25,000 to $29,999 | $30,000 to $34,999 | $35,000 to $39,999 | $40,000 to $49,999 | $50,000 to $59,999 | $60,000 to $74,999 | $75,000 to $89,999 | $90,000 to $109,999 | $110,000 to $129,999 | $130,000 to $149,999 | $150,000 to $169,999 | $170,000 or over"
+religion,factor,r's religious preference,Protestant | Catholic | Jewish | None | Other
+marital,factor,marital status,Married | Widowed | Divorced | Separated | Never Married
+padeg,factor,father's (or oldest same-sex parent's) highest degree,Less than High School | High School | Associate / Jr College | Bachelor's | Graduate
+madeg,factor,mother's (or youngest same-sex parent's) highest degree,Less than High School | High School | Associate / Jr College | Bachelor's | Graduate
+partyid,factor,political party affiliation,"Strong Democrat | Not Very Strong Democrat | Independent, Close to Democrat | Independent (Neither, No Response) | Independent, Close to Republican | Not Very Strong Republican | Strong Republican | Other Party"
+polviews,factor,think of self as liberal or conservative,"Extremely Liberal | Liberal | Slightly Liberal | Moderate, Middle of the Road | Slightly Conservative | Conservative | Extremely Conservative"
+happy,factor,general happiness,Very Happy | Pretty Happy | Not Too Happy
+partners_rc,factor,,0 | 1 | 2 | 3 | 4+
+grass,factor,should marijuana be made legal,Should be Legal | Should not be Legal
+zodiac,factor,respondents astrological sign,Aries | Taurus | Gemini | Cancer | Leo | Virgo | Libra | Scorpio | Sagittarius | Capricorn | Aquarius | Pisces
+wtssall,numeric,,
+wtssps,numeric,,
+vpsu,integer,,
+vstrat,integer,,

@@ -1,0 +1,13 @@
+.DS_Store
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+~$*
+*.tmp
+__pycache__/
+.env
+.env.*
+.quarto/
+slides/index.html
+slides/index_files/

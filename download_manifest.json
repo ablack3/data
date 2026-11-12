@@ -1,0 +1,317 @@
+[
+  {
+    "file": "data/raw/track1/tasks.csv",
+    "url": "https://raw.githubusercontent.com/ablack3/trends-in-agent-hiring/9f53734cdea0e890f228394c2a8ea186550ef863/tidytuesday/tasks.csv",
+    "retrieved_utc": "2026-11-12T18:45:14.755629+00:00",
+    "sha256": "66719cb3dd5469381e8397a74f289a30dcde49ce183680411787de25e5ce5af8",
+    "bytes": 976049
+  },
+  {
+    "file": "data/raw/track1/task_tags.csv",
+    "url": "https://raw.githubusercontent.com/ablack3/trends-in-agent-hiring/9f53734cdea0e890f228394c2a8ea186550ef863/tidytuesday/task_tags.csv",
+    "retrieved_utc": "2026-11-12T18:45:15.121384+00:00",
+    "sha256": "2278e57c289b454a471b1e772b415082c40041787e9449b18739d8672e30e340",
+    "bytes": 71300
+  },
+  {
+    "file": "data/raw/track1/platforms.csv",
+    "url": "https://raw.githubusercontent.com/ablack3/trends-in-agent-hiring/9f53734cdea0e890f228394c2a8ea186550ef863/tidytuesday/platforms.csv",
+    "retrieved_utc": "2026-11-12T18:45:15.360471+00:00",
+    "sha256": "07e819bf6c0d088347530e1c57d5c38c96e0aca0d7e218f9f8cd1c2d265fef03",
+    "bytes": 2190
+  },
+  {
+    "file": "data/raw/track1/readme.md",
+    "url": "https://raw.githubusercontent.com/ablack3/trends-in-agent-hiring/9f53734cdea0e890f228394c2a8ea186550ef863/tidytuesday/readme.md",
+    "retrieved_utc": "2026-11-12T18:45:15.718172+00:00",
+    "sha256": "e0577e80ad6ba3441aa6dbb36aa3b72d1c17855bf6124a156d55c630f4ac6e31",
+    "bytes": 8462
+  },
+  {
+    "file": "data/raw/track1/repository_README.md",
+    "url": "https://raw.githubusercontent.com/ablack3/trends-in-agent-hiring/9f53734cdea0e890f228394c2a8ea186550ef863/README.md",
+    "retrieved_utc": "2026-11-12T18:45:16.081794+00:00",
+    "sha256": "48da06315f086a35adbaadffabb379a2bcf4f70feebeb458b1e1c3fa57eeee81",
+    "bytes": 6491
+  },
+  {
+    "file": "data/raw/track2/gss_lon.rda",
+    "url": "https://raw.githubusercontent.com/kjhealy/socviz/f285a44959705860f8d042fbda1c2d054c9c8eb4/data/gss_lon.rda",
+    "retrieved_utc": "2026-11-12T18:45:16.607245+00:00",
+    "sha256": "cfd101a845c0ce321233d5306ad381ac10914375efcf6450aa0a2796ec210174",
+    "bytes": 821328
+  },
+  {
+    "file": "data/raw/track2/gss_lon.Rd",
+    "url": "https://raw.githubusercontent.com/kjhealy/socviz/f285a44959705860f8d042fbda1c2d054c9c8eb4/man/gss_lon.Rd",
+    "retrieved_utc": "2026-11-12T18:45:16.842637+00:00",
+    "sha256": "0502811e6e81cb5e7b4a906fbd02ef38f3131ecc833bd6504d3eb58e41a2d069",
+    "bytes": 1766
+  },
+  {
+    "file": "data/raw/track2/DESCRIPTION",
+    "url": "https://raw.githubusercontent.com/kjhealy/socviz/f285a44959705860f8d042fbda1c2d054c9c8eb4/DESCRIPTION",
+    "retrieved_utc": "2026-11-12T18:45:16.983780+00:00",
+    "sha256": "aaca3d8b7484dccca314a5dfafd4a40a93695917918917ff3efa361bb3928396",
+    "bytes": 858
+  },
+  {
+    "file": "data/raw/track2/data.r",
+    "url": "https://raw.githubusercontent.com/kjhealy/socviz/f285a44959705860f8d042fbda1c2d054c9c8eb4/R/data.r",
+    "retrieved_utc": "2026-11-12T18:45:17.277951+00:00",
+    "sha256": "907f44a2d7f06d47a8d7cb252fc4827c3bf32e15168301185264815c0000f040",
+    "bytes": 25589
+  },
+  {
+    "file": "data/raw/portwatch_metadata.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0?f=pjson",
+    "retrieved_utc": "2026-11-12T18:45:17.698517+00:00",
+    "sha256": "d0041dc19bd0df5ee51af79d329f0e8af3faa7d5a7821f1089315844e93619fb",
+    "bytes": 14653
+  },
+  {
+    "file": "data/raw/track3/page_000000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=0&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.042492+00:00",
+    "sha256": "88a42cb7c00d0e05df03ca1946c43a632056c0c2913788df5874dfb7d76d7d41",
+    "bytes": 456692
+  },
+  {
+    "file": "data/raw/track3/page_001000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=1000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.124004+00:00",
+    "sha256": "b8f296f2fba4c16d0f13ff258ab87c68f6493c7aa7d8251012b0adb8daf9f2de",
+    "bytes": 457375
+  },
+  {
+    "file": "data/raw/track3/page_002000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=2000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.129167+00:00",
+    "sha256": "1a7ee08ca5f2b79132e9d11ca658444161bcc47a8996aa0a76269a60d64614ec",
+    "bytes": 453623
+  },
+  {
+    "file": "data/raw/track3/page_003000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=3000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.134023+00:00",
+    "sha256": "8ba234714e9315090e20ab97cee3b4abdbd1bab26c81df67d84428390cecf571",
+    "bytes": 453648
+  },
+  {
+    "file": "data/raw/track3/page_004000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=4000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.784663+00:00",
+    "sha256": "bce96019d6d701d66c8fd7f429a1406e9691f53e89daf31da1cbe84c3333cf3a",
+    "bytes": 453947
+  },
+  {
+    "file": "data/raw/track3/page_005000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=5000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.792118+00:00",
+    "sha256": "227fc7afe44cd655911f91ac0ced95fe3a064f796ef06ab0cd3f7d67d4a41aa1",
+    "bytes": 455380
+  },
+  {
+    "file": "data/raw/track3/page_006000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=6000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.798002+00:00",
+    "sha256": "b4554d7e58c38798bfc2f6f1dc6dd3430d9a7b6e7b629198845b70cdc1edde00",
+    "bytes": 459271
+  },
+  {
+    "file": "data/raw/track3/page_007000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=7000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:19.908271+00:00",
+    "sha256": "0a4a093395dfed014785946d58247397ca5767c039e312ae13bbddc09601c2ae",
+    "bytes": 458825
+  },
+  {
+    "file": "data/raw/track3/page_008000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=8000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:20.490430+00:00",
+    "sha256": "232fdc0ed5060081f13ca9e0b6174517028f6d82c5065d9436ac482d79985e40",
+    "bytes": 463487
+  },
+  {
+    "file": "data/raw/track3/page_009000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=9000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:20.820633+00:00",
+    "sha256": "675a9565a7a2b450515a52ae3fe5cfd7c615427a12eb4f70a4587ad93b236f4c",
+    "bytes": 466392
+  },
+  {
+    "file": "data/raw/track3/page_010000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=10000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:20.895721+00:00",
+    "sha256": "4b437f0a5728dd8197da7879f048c7d21f7c4d70e9a7af68e5d63809d4b43c47",
+    "bytes": 465370
+  },
+  {
+    "file": "data/raw/track3/page_011000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=11000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:20.911588+00:00",
+    "sha256": "40ed26caaa766b7bba733e0040f2ded8dc63e4b460c9b5df0f56d3cda86a6e1f",
+    "bytes": 465758
+  },
+  {
+    "file": "data/raw/track3/page_012000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=12000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:21.310477+00:00",
+    "sha256": "51de98785b4f181a13f3126cb1a7fe116ed1e8a36e1b0b39cdcfd0608e14e019",
+    "bytes": 469038
+  },
+  {
+    "file": "data/raw/track3/page_013000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=13000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:21.518854+00:00",
+    "sha256": "2794cd25d209406b282a09b242cf160b6cdf2fa01493a3d1d226541e3a71bb78",
+    "bytes": 468950
+  },
+  {
+    "file": "data/raw/track3/page_014000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=14000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:21.523648+00:00",
+    "sha256": "ebb7f9f26fa5893f5c191fefea24822782c23ba75719ab12bdc20d4a655c9f93",
+    "bytes": 464774
+  },
+  {
+    "file": "data/raw/track3/page_015000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=15000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:21.528440+00:00",
+    "sha256": "65541cdaa6309232dd539ca5733e3f264b6b2729b5b3f4c3e4df6ba27b48e496",
+    "bytes": 462062
+  },
+  {
+    "file": "data/raw/track3/page_016000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=16000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:21.980795+00:00",
+    "sha256": "0f4f822fcb3a4f783f1e0c668bdfb106f9f92829ce4a93a4b52d9e89b97c63c9",
+    "bytes": 457483
+  },
+  {
+    "file": "data/raw/track3/page_017000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=17000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:22.067331+00:00",
+    "sha256": "527c02b181a52ced9115ad9d3f88595468a5cad73d305e7a69b515cf6c164c68",
+    "bytes": 463114
+  },
+  {
+    "file": "data/raw/track3/page_018000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=18000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:22.172423+00:00",
+    "sha256": "f7c8fdf796d1c0434951246f4f7ed1ceaea29936decdbd89dfaf76e04b7e04dd",
+    "bytes": 464807
+  },
+  {
+    "file": "data/raw/track3/page_019000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=19000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:22.363037+00:00",
+    "sha256": "31b775d545c45421759aadd754d4bc3f9e6c043547543cf99a634034c176a95d",
+    "bytes": 464987
+  },
+  {
+    "file": "data/raw/track3/page_020000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=20000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:22.602277+00:00",
+    "sha256": "9a9636d1cd54f3ebfbe3f9a6590f34ef88bb030f7e233f20abba9bce8c4123ec",
+    "bytes": 468659
+  },
+  {
+    "file": "data/raw/track3/page_021000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=21000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.047390+00:00",
+    "sha256": "1396ff1825f8d3314f0f559c2a913d7d28458631164ed2a3255cc18c831621b8",
+    "bytes": 469242
+  },
+  {
+    "file": "data/raw/track3/page_022000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=22000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.052155+00:00",
+    "sha256": "7472eec2c6f7e0e3bf7f0967e0d74b578042a67a24b7a654ab4dbdf0e7198f21",
+    "bytes": 468897
+  },
+  {
+    "file": "data/raw/track3/page_023000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=23000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.056517+00:00",
+    "sha256": "bad3225f349b1ae69244260d72e5a199636e1d60574044a18bf62dcda91db678",
+    "bytes": 469291
+  },
+  {
+    "file": "data/raw/track3/page_024000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=24000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.361476+00:00",
+    "sha256": "1120656a1f9a82d8491aca18e79f92b88b459eaacd6356fc74fbb0a29d841957",
+    "bytes": 469198
+  },
+  {
+    "file": "data/raw/track3/page_025000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=25000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.410403+00:00",
+    "sha256": "4fe795af7af2711590060da4bd55bfe682c28c848d08f415ebbc497c6a148153",
+    "bytes": 467361
+  },
+  {
+    "file": "data/raw/track3/page_026000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=26000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.505900+00:00",
+    "sha256": "6e122d869e75abf8855c8c46f9346b9c49bf462cd05ee91614880bfed1c3b696",
+    "bytes": 459935
+  },
+  {
+    "file": "data/raw/track3/page_027000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=27000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:23.668341+00:00",
+    "sha256": "8bb14f9ab30497288a9105316ed5be333274a9df7a65032e5319fcc0a10f3940",
+    "bytes": 461300
+  },
+  {
+    "file": "data/raw/track3/page_028000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=28000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.076387+00:00",
+    "sha256": "4ddae3a1a149fb147d0b5dc883bb79dff81f3373c027fa755dc9fbb420945676",
+    "bytes": 456838
+  },
+  {
+    "file": "data/raw/track3/page_029000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=29000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.082628+00:00",
+    "sha256": "5f453e0f6216eae87d952c7ac78e8dbf823c81eeaae2e05a34f2f58eec8c0a30",
+    "bytes": 453037
+  },
+  {
+    "file": "data/raw/track3/page_030000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=30000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.368947+00:00",
+    "sha256": "563bba75123a98a3be8c2cb98607c925345e53ea4c59d02aa335bab97a445c69",
+    "bytes": 452320
+  },
+  {
+    "file": "data/raw/track3/page_031000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=31000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.560143+00:00",
+    "sha256": "c63ba79b52c6ccc87aba393c37b6962704d4f1ec33b258de4c8ef055d4c6698c",
+    "bytes": 452445
+  },
+  {
+    "file": "data/raw/track3/page_032000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=32000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.563731+00:00",
+    "sha256": "487aabaf80cf45d77256318d1157ebde13741b6a6e8376ae1b98c7c425fe2aed",
+    "bytes": 453219
+  },
+  {
+    "file": "data/raw/track3/page_033000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=33000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:24.948557+00:00",
+    "sha256": "6a96ecb7c18e52c6d4ad0895765d20da474615ab4285c8f772bf9b83c42b1688",
+    "bytes": 454755
+  },
+  {
+    "file": "data/raw/track3/page_034000.json",
+    "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&outFields=%2A&returnGeometry=false&orderByFields=ObjectId+ASC&resultOffset=34000&resultRecordCount=1000",
+    "retrieved_utc": "2026-11-12T18:45:25.030243+00:00",
+    "sha256": "9bd7af6376d21a0391e18761ea98f79c9e0619c141b0db935a579c731606f239",
+    "bytes": 197196
+  }
+]

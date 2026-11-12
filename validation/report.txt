@@ -1,0 +1,37 @@
+PASS: CSV parse: data/raw/track1/tasks.csv
+PASS: CSV parse: data/raw/track1/platforms.csv
+PASS: CSV parse: data/raw/track1/task_tags.csv
+PASS: Track 1 keys and posting timestamps present
+PASS: Track 1 posting keys unique
+PASS: Track 1 platform keys unique
+PASS: Track 1 posting/tag combinations unique
+PASS: Track 1 platform foreign keys valid
+PASS: Track 1 tag foreign keys valid
+PASS: Track 1 counts reconcile with upstream platform manifest
+PASS: Track 1 known USD prices nonnegative
+PASS: Track 1 USD prices match source USD/USDC amounts
+PASS: Track 2 dimensions match socviz documentation: 75699 x 25
+PASS: Track 2 respondent keys present
+PASS: Track 2 year/id keys unique
+PASS: Track 2 has 12 labelled zodiac categories
+PASS: Track 2 all signs have actual observations
+PASS: Track 2 zodiac subset has positive finite wtssps weights
+PASS: Track 2 zodiac subset has complete PSU and stratum variables
+PASS: CSV parse: data/raw/track3/portwatch.csv
+PASS: Track 3 dates parsed as Date
+PASS: Track 3 chokepoint/date keys unique
+PASS: Track 3 no missing dates, identifiers or counts
+PASS: Track 3 contains all 12 requested chokepoints
+PASS: Track 3 vessel counts nonnegative
+PASS: Track 3 vessel counts are integers
+PASS: Track 3 cargo subcategories reconcile to n_cargo
+PASS: Track 3 cargo plus tankers reconcile to n_total
+PASS: Track 3 date agrees with source year/month/day
+PASS: Track 3 no daily gaps within each chokepoint
+PASS: Track 3 all chokepoints share the same date coverage
+
+Track 1: 449 postings; 4 platforms; 857 tags; 2026-02-04 18:09:34 to 2026-09-14 18:40:53 UTC.
+Track 1: 7 missing prices; 5 missing titles; 5 missing descriptions; 3 test/spam flags; 420 missing payout confirmations.
+Track 2: 75699 full rows; 64451 zodiac rows; 64112 with partyid; 58367 with polviews; 58143 with both.
+Track 2 zodiac coverage: 1976 to 2022. 2024 nonmissing zodiac: 0.
+Track 3: 34428 daily rows; 12 corridors; 2019-01-01 to 2026-11-08; 172140 long rows.

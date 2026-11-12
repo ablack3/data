@@ -1,0 +1,5 @@
+{
+  "expected_rows": 34428,
+  "where": "portid IN ('chokepoint1','chokepoint2','chokepoint3','chokepoint4','chokepoint5','chokepoint6','chokepoint7','chokepoint8','chokepoint11','chokepoint14','chokepoint15','chokepoint19') AND date <= DATE '2026-11-12'",
+  "count_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query?where=portid+IN+%28%27chokepoint1%27%2C%27chokepoint2%27%2C%27chokepoint3%27%2C%27chokepoint4%27%2C%27chokepoint5%27%2C%27chokepoint6%27%2C%27chokepoint7%27%2C%27chokepoint8%27%2C%27chokepoint11%27%2C%27chokepoint14%27%2C%27chokepoint15%27%2C%27chokepoint19%27%29+AND+date+%3C%3D+DATE+%272026-11-12%27&f=json&returnCountOnly=true"
+}
