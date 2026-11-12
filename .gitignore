@@ -11,3 +11,6 @@ __pycache__/
 .quarto/
 slides/index.html
 slides/index_files/
+
+# Private organizer pressure tests: never publish participant answers.
+_private_analysis/
