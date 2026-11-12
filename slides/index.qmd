@@ -41,7 +41,7 @@ Three tracks + a bonus. One prize.
 34,428 daily records across 12 chokepoints
 
 **04  Bonus: issues in the 2026 midterms**  
-16 issues across three voter groups
+113,020 respondents; 12 issue priorities
 :::
 
 ::: {.column width="42%"}
@@ -166,30 +166,30 @@ The source is the IMF ArcGIS Daily_Chokepoints_Data table, downloaded November 1
 ## Bonus Track 4: issues in the 2026 midterms
 
 ::: {.question}
-Which issues united or divided voters before the 2026 midterms?
+Which issues do voters prioritize together—and how does this differ by party?
 :::
 
-**Pew Research Center** published issue priorities for **all registered voters** and supporters of **Republican or Democratic congressional candidates**.
+**NORC Civic Health & Elections Project:** individual registered voters surveyed in the week before the **2026 midterms**. Frozen November 12, 2026.
 
-| Table | Rows × columns | One row represents | Download |
+| Table | Rows × columns | Contents | Download |
 |:---|---:|:---|:---|
-| `issue_priorities` | 48 × 4 | One issue and voter group | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities.rds) |
-| `issue_priorities_wide` | 16 × 5 | One issue, with three group estimates | [CSV](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities_wide.csv) / [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track4/issue_priorities_wide.rds) |
+| `voter_issues` | 113,020 × 32 | Issues, voting, demographics, weights | [RDS](https://raw.githubusercontent.com/ablack3/data/main/data/track4/voter_issues.rds) / [CSV ZIP](https://raw.githubusercontent.com/ablack3/data/main/data/track4/voter_issues_csv.zip) |
+| Full source | 113,020 × 402 | Original survey and linked context | [CSV ZIP](https://raw.githubusercontent.com/ablack3/data/main/data/raw/track4/civichealth_csv.zip) |
 
 ```r
-issues <- readRDS("data/track4/issue_priorities.rds")
+voters <- readRDS("data/track4/voter_issues.rds")
 ```
 
-**Measure:** percentage saying each issue was *very important* to their vote. Survey dates: **September 28–October 4, 2026**. Compare priorities or percentage-point gaps.
+**Explore:** 12 binary issue priorities, six candidate-disagreement items, party and House vote choice. One row per person; labels and survey weights included.
 
 ::: {.caveat}
-Aggregate pre-election estimates, not exit-poll respondents or actual votes. Multiple issues can be important. These data cannot establish what caused the election result.
+Select up to three issues: unselected ≠ opposed. Vote choice is reported/intended. Standard arules metrics are unweighted; use weights for population summaries.
 :::
 
 ::: {.source}
-Source: [Pew's issue-priority table](https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/). [Dataset notes](https://github.com/ablack3/data/blob/main/data/track4/README.md).
+Source: [NORC download portal](https://civichealth.norc.org/download-data.html). [Dictionary and access notes](https://github.com/ablack3/data/blob/main/data/track4/README.md). RDS and ZIP files work offline.
 :::
 
 ::: {.notes}
-Optional, smaller visualization track. The verified published table includes 16 issues, not 11. Each of 48 observations is a rounded issue-by-group percentage, not a respondent. All registered voters overlaps the supporter groups, and their percentages need not equal an unweighted average of the two supporter percentages. Percentages are not exclusive across issues. This table does not supply subgroup denominators, standard errors or the joint responses needed for individual-level models. Programmatic extraction of the publisher's chart JSON matched its HTML table exactly. No unverified NBC/Mehlman exit-poll figures were added.
+All 113,020 respondents retained, including 282 with no selected issues. Unique su_id; positive finite chep_weight. Category nonresponse and disclosure codes mapped to NA; no imputation. Original 402-column CSV preserved losslessly in ZIP; redundant SAV/Stata copies omitted. RDS uses xz compression and CSV ZIP includes the dictionary and response-code mappings. Full questionnaire/codebook archived. Top-three selection constrains associations. Avoid treating factor codes as numeric scales, interpreting nonselection as opposition, or presenting unweighted arules results as population estimates. Freeze survey weights because NORC may revise them. Validate discovered associations on held-out respondents and across defensible preprocessing choices. This replaces the earlier Pew aggregate chart.
 :::

@@ -25,7 +25,9 @@ gss_ideology <- gss[!is.na(gss$polviews), ]
 # Example corridor selection, with no event effect calculated for you:
 hormuz <- shipping[shipping$portname == 'Strait of Hormuz', ]
 
-# Bonus Track 4: published group percentages, not respondent records.
-issues <- readRDS('data/track4/issue_priorities.rds')
-# Multiple issues may be important to the same voters; do not sum percentages.
-# No causal election-outcome or individual-level prediction claims are supported.
+# Bonus Track 4: individual respondents, with binary top-three issue selections.
+voters <- readRDS('data/track4/voter_issues.rds')
+issue_columns <- setdiff(grep('^issues_', names(voters), value=TRUE), 'issues_selected')
+issue_matrix <- as.matrix(voters[issue_columns])
+# Nonselection does not mean opposition. Standard arules metrics are unweighted.
+# Define how zero-selection records and survey weights enter your analysis.

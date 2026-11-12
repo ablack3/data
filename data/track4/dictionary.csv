@@ -1,8 +1,33 @@
-variable,meaning
-issue_id,Stable local identifier in source chart order (1-16).
-issue,Issue label as published by Pew.
-voter_group,All registered voters or supporters of a Republican/Democratic congressional candidate.
-percent_very_important,Published rounded percentage (0-100); not a respondent count.
-all_registered_voters,Wide-table percentage for all registered voters.
-republican_candidate_supporters,Wide-table percentage for Republican candidate supporters.
-democratic_candidate_supporters,Wide-table percentage for Democratic candidate supporters.
+variable,source_variable,label
+age6,AGE6,What is your age?
+chep_weight,CHEP_WEIGHT,Overall population weight
+diffview_abortion,DIFFVIEW_ABORTION,"Could you ever vote for a candidate who holds different views from you on abortion policy, or is that issue so important that you could never vote for such a candidate?"
+diffview_econ,DIFFVIEW_ECON,"Could you ever vote for a candidate who holds different views from you on the economy, or is that issue so important that you could never vote for such a candidate?"
+diffview_guns,DIFFVIEW_GUNS,"Could you ever vote for a candidate who holds different views from you on gun policy, or is that issue so important that you could never vote for such a candidate?"
+diffview_health,DIFFVIEW_HEALTH,"Could you ever vote for a candidate who holds different views from you on health care policy, or is that issue so important that you could never vote for such a candidate?"
+diffview_imm,DIFFVIEW_IMM,"Could you ever vote for a candidate who holds different views from you on immigration and border security, or is that issue so important that you could never vote for such a candidate?"
+diffview_mideast,DIFFVIEW_MIDEAST,"Could you ever vote for a candidate who holds different views from you on the Israeli-Palestinian conflict, or is that issue so important that you could never vote for such a candidate?"
+educ,EDUC,What is the highest degree or level of school you have completed?
+gender3,GENDER3,How do you describe yourself?
+housevote,HOUSEVOTE,Vote for Congress
+ideo5,IDEO5,"On most political matters, do you consider yourself..."
+income,INCOME,"In which of these categories is your total yearly household income, that is, of everyone living in your family household? Was your total household income in 2025..."
+issues_abortion,ISSUES_ABORTION,Which of the following would you say are the most important issues facing the country? Abortion
+issues_climate,ISSUES_CLIMATE,Which of the following would you say are the most important issues facing the country? Climate change
+issues_crime,ISSUES_CRIME,Which of the following would you say are the most important issues facing the country? Crime
+issues_econ,ISSUES_ECON,Which of the following would you say are the most important issues facing the country? The economy and jobs
+issues_educ,ISSUES_EDUC,Which of the following would you say are the most important issues facing the country? Education
+issues_gridlock,ISSUES_GRIDLOCK,Which of the following would you say are the most important issues facing the country? Partisan gridlock
+issues_guns,ISSUES_GUNS,Which of the following would you say are the most important issues facing the country? Gun policy
+issues_healthcare,ISSUES_HEALTHCARE,Which of the following would you say are the most important issues facing the country? Health care
+issues_imm,ISSUES_IMM,Which of the following would you say are the most important issues facing the country? Immigration
+issues_iran,ISSUES_IRAN,Which of the following would you say are the most important issues facing the country? The war in Iran
+issues_natdebt,ISSUES_NATDEBT,Which of the following would you say are the most important issues facing the country? National debt
+issues_racism,ISSUES_RACISM,Which of the following would you say are the most important issues facing the country? Racism
+likelyvoter,LIKELYVOTER,Likely Voter Model
+p_state,P_STATE,State - character variable - state abbreviation
+party,PARTY,"Generally speaking, do you consider yourself a Democrat, a Republican, or don't you consider yourself either?"
+party5,PARTY5,"Generally speaking, do you consider yourself a Democrat, a Republican, or don't you consider yourself either? Would you say you're closer to the Democrats, to the Republicans, or don't you lean toward either?"
+raceth4,RACETH4,What is your racial or ethnic heritage?
+su_id,SU_ID,Case ID
+issues_selected,NA,Number of selected top-priority issues (0-3); zero is not interpreted as indifference.

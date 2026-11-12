@@ -51,9 +51,9 @@ See [EVENT_BRIEF.md](EVENT_BRIEF.md) for the suggested judging criteria and [the
 | 1: Trends in AI-agent job postings | `data/track1/tasks.rds` or `.csv` | 449 postings, four platforms; posting timestamps February 4–September 14, 2026 |
 | 2: Political preferences by astrological sign | `data/track2/gss_politics.rds` or `.csv` | 64,451 respondents with zodiac signs, 1976–2022 |
 | 3: Shipping during the Hormuz disruption | `data/track3/chokepoints_daily.rds` or `.csv` | 34,428 chokepoint-days; 12 corridors; January 1, 2019–November 8, 2026 |
-| 4: Bonus — issues in the 2026 midterms | `data/track4/issue_priorities.rds` or `.csv` | 48 published estimates: 16 issues × 3 voter groups; September 28–October 4, 2026 |
+| 4: Bonus — issues in the 2026 midterms | `data/track4/voter_issues.rds` or `_csv.zip` | 113,020 respondents; 12 issue indicators; week before the 2026 midterms |
 
-Prefer RDS in R: dates, factor levels, labels, numeric types and missing values are preserved. CSV exports have blank missing values and category labels instead of factor codes. Full source files and download provenance are retained under `data/raw/` and `download_manifest.json`.
+Prefer RDS in R: dates, factor levels, labels, numeric types and missing values are preserved. CSV exports have blank missing values and category labels instead of factor codes. Track 4 CSV files are ZIP-compressed. Full source files and download provenance are retained under `data/raw/` and `download_manifest.json`.
 
 ## Track 1 — jobs posted by AI agents
 
@@ -116,22 +116,24 @@ These are AIS-observed transits, not necessarily all actual crossings or unique 
 
 Attribution: Sources: UN Global Platform; IMF PortWatch (portwatch.imf.org). No third-party Creative Commons license is asserted for IMF data.
 
-## Bonus Track 4 — issues in the 2026 midterms
+## Bonus Track 4 — issue bundles in the 2026 midterms
 
-**Question: Which issues united or divided voters before the 2026 midterms?**
+**Question: Which issues do voters prioritize together, and how do these combinations differ by party or vote choice?**
 
-[Pew Research Center’s published chart](https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/) reports 16 issues for three voter groups: all registered voters, Republican candidate supporters and Democratic candidate supporters. The survey ran September 28–October 4, 2026.
+[NORC Civic Health & Elections Project](https://civichealth.norc.org/download-data.html): **113,020 individual respondents**, surveyed in the week before the 2026 midterms. Frozen November 12, 2026.
 
-- `issue_priorities`: 48 rows × 4 columns, one issue/group estimate per row.
-- `issue_priorities_wide`: 16 rows × 5 columns, one issue per row.
-- CSV and RDS versions, dictionary and [dataset notes](data/track4/README.md) are included.
-- `data/raw/track4/` contains the extracted original table and provenance. The chart JSON and rendered HTML table agree exactly.
+- `data/track4/voter_issues.rds`: compressed starter, **113,020 × 32**; load directly with `readRDS()`.
+- `data/track4/voter_issues_csv.zip`: same table as zipped CSV, with dictionary and response mappings.
+- `data/raw/track4/civichealth_csv.zip`: complete original **113,020 × 402** CSV. Redundant SPSS/Stata copies omitted.
+- Original questionnaire and full codebook also included. [Cleaning, access and interpretation notes](data/track4/README.md).
 
-This optional smaller track supports comparisons and visualizations of rounded percentages saying each issue was very important. It does not contain individual respondents, exit-poll responses or actual vote outcomes. Multiple issues may be important to the same voter, and the groups overlap. Subgroup sample sizes and standard errors are absent from the chart table. Do not infer causes of election results or individual predictions. The supplied note's NBC/Mehlman figures were not independently verified and are not included.
+Twelve binary top-priority issues support basket analysis; six candidate-disagreement items support additional topic associations. Party, vote choice, demographics and survey weights are included. All respondents retained; nonresponse/disclosure codes become NA in cleaned categorical fields. No imputation.
+
+The issue question limits selection to three, so nonselection does not imply opposition and the cap affects correlations. There are 282 zero-selection records. Vote choice is reported/intended, not validated. Standard `arules` measures are unweighted; use survey weights for population summaries. The earlier aggregate Pew table has been replaced.
 
 ## Validation and reproduction
 
-`validation/track4_report.txt` records the bonus table checks. `validation/report.txt` records 31 passing checks for the original three tracks: parsing, keys, relationships, source-count reconciliation, survey coverage, weights, daily continuity, count validity and shipping subtotals. Missingness for the original three tracks is enumerated in `validation/missingness.csv`; the bonus table has no missing cells. These checks establish structural readiness, not truth of the upstream classifications or representativeness of the samples.
+`validation/track4_report.txt` records the bonus table checks. `validation/report.txt` records 31 passing checks for the original three tracks: parsing, keys, relationships, source-count reconciliation, survey coverage, weights, daily continuity, count validity and shipping subtotals. Missingness for the original three tracks is enumerated in `validation/missingness.csv`; Track 4 missingness is in `validation/track4_missingness.csv`. These checks establish structural readiness, not truth of the upstream classifications or representativeness of the samples.
 
 To recreate derived files offline, from this directory:
 
@@ -152,3 +154,5 @@ bash scripts/build_slides.sh
 ```
 
 This renders `slides/index.qmd` to a self-contained `docs/index.html`. GitHub Pages publishes the `/docs` folder on `main`. Commit and push the rendered HTML after slide changes. The hosted deck links directly to the CSV and RDS files in this repository. It contains five slides, including the competition schedule on the overview and the optional bonus track.
+
+Track 4 download sizes: starter RDS **1.52 MB**, starter CSV ZIP **2.97 MB**, full source CSV ZIP **15.12 MB** (original CSV **88.18 MB**). Sizes are decimal MB, rounded.

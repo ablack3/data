@@ -313,5 +313,19 @@
     "retrieved_utc": "2026-11-12T18:45:25.030243+00:00",
     "sha256": "9bd7af6376d21a0391e18761ea98f79c9e0619c141b0db935a579c731606f239",
     "bytes": 197196
+  },
+  {
+    "file": "data/raw/track4/civichealth_csv.zip",
+    "url": "https://civichealth.norc.org/downloads/civichealth_datafile.zip",
+    "retrieved_utc": "2026-11-12T21:55:11.176308+00:00",
+    "sha256": "828618b0ce3128fd7754676c9d3125b69525f20efa223eb1bbc35398cfbb20c6",
+    "bytes": 15119977
+  },
+  {
+    "file": "data/raw/track4/civichealth_codebook.zip",
+    "url": "https://civichealth.norc.org/downloads/civichealth_codebook.zip",
+    "retrieved_utc": "2026-11-12T21:55:11.176308+00:00",
+    "sha256": "5c0e522820d36562d2610ea514ae693079f871b3352584ee070b628b02ac59c8",
+    "bytes": 241714
   }
 ]

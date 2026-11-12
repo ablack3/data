@@ -1,5 +1,8 @@
-PASS: source CSV parses without missing values; 16 unique issue labels.
-PASS: 48 unique issue/group records; percentages are between 0 and 100.
-PASS: long-to-wide reconstruction exactly matches all source-derived values.
-Output: issue_priorities 48 x 4; issue_priorities_wide 16 x 5.
-No respondent-level data, subgroup sample sizes or standard errors are provided in this chart table.
+PASS: source 113020 x 402; unique nonmissing SU_ID.
+PASS: delivered voter_issues 113020 x 32; all respondents retained.
+PASS: twelve issue indicators complete and binary; selections range 0-3.
+Zero-selection records retained: 282.
+PASS: survey weights positive and finite; category codes checked against codebook.
+PASS: compressed RDS and zipped CSV load in R and agree in every cell.
+Nonresponse and disclosure-suppression codes mapped to NA in selected categorical fields; no imputation.
+Raw CSV preserves all 402 columns and original codes. See track4_missingness.csv.

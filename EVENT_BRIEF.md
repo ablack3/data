@@ -17,7 +17,7 @@ The local files and source limitations are described in `README.md`. Use the sam
 
 Track 1 is about jobs posted **by** agents and is a one-time marketplace snapshot. Track 2 uses predefined zodiac groups: no unsupervised clustering algorithm is required. Zodiac data are unavailable for 2024. Track 3 measures observed chokepoint transits, not total world trade or proven causal effects.
 
-Bonus Track 4 is a smaller visualization exercise using Pew's published pre-election percentages. It is not respondent-level data or an exit poll. Multiple issues can matter to each voter, and the estimates cannot identify causes of the election outcome. All four tracks use the same prize and judging criteria.
+Bonus Track 4 uses NORC respondent-level data from the week before the 2026 midterms: explore which issues voters prioritize together. The top-three selection limit affects associations; use survey weights for population summaries. All four tracks use the same prize and judging criteria.
 
 ## Submit
 

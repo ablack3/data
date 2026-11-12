@@ -1,0 +1,94 @@
+variable,value,value_label
+AGE6,1,18-24
+AGE6,2,25-29
+AGE6,3,30-39
+AGE6,4,40-49
+AGE6,5,50-64
+AGE6,6,65+
+AGE6,88,REMOVED FOR DISCLOSURE RISK
+AGE6,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_ABORTION,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_ABORTION,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_ABORTION,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_ECON,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_ECON,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_ECON,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_GUNS,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_GUNS,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_GUNS,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_HEALTH,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_HEALTH,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_HEALTH,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_IMM,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_IMM,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_IMM,99,DON'T KNOW/SKIPPED/REFUSED
+DIFFVIEW_MIDEAST,1,"Yes, I could vote for a candidate who holds different vi"
+DIFFVIEW_MIDEAST,2,"No, I could never vote for a candidate who holds differe"
+DIFFVIEW_MIDEAST,99,DON'T KNOW/SKIPPED/REFUSED
+EDUC,1,High school or less
+EDUC,2,Some college/assoc. degree
+EDUC,3,College graduate
+EDUC,4,Postgraduate study
+EDUC,99,DON'T KNOW/SKIPPED/REFUSED
+GENDER3,1,Male
+GENDER3,2,Female
+GENDER3,3,Transgender/other
+GENDER3,99,DON'T KNOW/SKIPPED/REFUSED
+HOUSEVOTE,1,Democratic candidate for Congress
+HOUSEVOTE,2,Republican candidate for Congress
+HOUSEVOTE,3,Another candidate
+HOUSEVOTE,99,DON'T KNOW/SKIPPED/REFUSED
+IDEO5,1,Very liberal
+IDEO5,2,Somewhat liberal
+IDEO5,3,Moderate
+IDEO5,4,Somewhat conservative
+IDEO5,5,Very conservative
+IDEO5,99,DON'T KNOW/SKIPPED/REFUSED
+INCOME,1,"Under $25,000"
+INCOME,2,"$25,000-$49,999"
+INCOME,3,"$50,000-$74,999"
+INCOME,4,"$75,000-$99,999"
+INCOME,5,"$100,000 or more"
+INCOME,99,DON'T KNOW/SKIPPED/REFUSED
+ISSUES_ABORTION,0,Not selected
+ISSUES_ABORTION,1,Selected
+ISSUES_CLIMATE,0,Not selected
+ISSUES_CLIMATE,1,Selected
+ISSUES_CRIME,0,Not selected
+ISSUES_CRIME,1,Selected
+ISSUES_ECON,0,Not selected
+ISSUES_ECON,1,Selected
+ISSUES_EDUC,0,Not selected
+ISSUES_EDUC,1,Selected
+ISSUES_GRIDLOCK,0,Not selected
+ISSUES_GRIDLOCK,1,Selected
+ISSUES_GUNS,0,Not selected
+ISSUES_GUNS,1,Selected
+ISSUES_HEALTHCARE,0,Not selected
+ISSUES_HEALTHCARE,1,Selected
+ISSUES_IMM,0,Not selected
+ISSUES_IMM,1,Selected
+ISSUES_IRAN,0,Not selected
+ISSUES_IRAN,1,Selected
+ISSUES_NATDEBT,0,Not selected
+ISSUES_NATDEBT,1,Selected
+ISSUES_RACISM,0,Not selected
+ISSUES_RACISM,1,Selected
+LIKELYVOTER,1,Likely voter
+LIKELYVOTER,2,Nonvoter
+PARTY,1,Democrat
+PARTY,2,Republican
+PARTY,3,Neither
+PARTY,99,DON'T KNOW/SKIPPED/REFUSED
+PARTY5,1,Democrat
+PARTY5,2,Lean Democrat
+PARTY5,3,Independent no lean
+PARTY5,4,Lean Republican
+PARTY5,5,Republican
+PARTY5,99,DON'T KNOW/SKIPPED/REFUSED
+RACETH4,1,White
+RACETH4,2,African American or Black
+RACETH4,3,Latino or Hispanic
+RACETH4,4,Other
+RACETH4,88,REMOVED FOR DISCLOSURE RISK
+RACETH4,99,DON'T KNOW/SKIPPED/REFUSED

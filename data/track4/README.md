@@ -1,24 +1,49 @@
-# Bonus Track 4: issues in the 2026 midterms
+# Bonus Track 4: issue bundles in the 2026 midterms
 
-**Question: Which issues united or divided voters before the 2026 midterms?**
+**Question: Which issues do voters prioritize together, and how do these combinations differ by party or vote choice?**
 
-Source: [Pew Research Center's October 8, 2026 issue-priority report](https://www.pewresearch.org/politics/2026/10/08/economy-ranks-as-top-issue-in-midterms-for-all-voters-but-partisans-differ-over-the-importance-of-other-issues/), fielded September 28–October 4, 2026. The published table contains **16 issues**, rather than the 11 mentioned in the supplied research note.
+Source: [NORC Civic Health & Elections Project](https://civichealth.norc.org/download-data.html). Registered voters surveyed in the week leading up to the 2026 midterms; frozen November 12, 2026. This replaces the earlier aggregate Pew table.
 
-| File stem | CSV and RDS dimensions | One row |
+| File | Dimensions | Contents |
 |---|---|---|
-| `issue_priorities` | 48 × 4 | One issue and voter group |
-| `issue_priorities_wide` | 16 × 5 | One issue, with three group percentages |
+| `voter_issues.rds` | 113,020 × 32 | Compressed R starter table; one respondent per row |
+| `voter_issues_csv.zip` | 113,020 × 32 | Same table as CSV, plus dictionary and response-code mappings |
+| `../raw/track4/civichealth_csv.zip` | 113,020 × 402 | Full original CSV, unchanged bytes, compressed without redundant SAV/Stata copies |
+| `../raw/track4/civichealth_codebook.zip` | Documentation | Original questionnaire, full variable list, response options and workbook |
 
 ```r
-issues <- readRDS('data/track4/issue_priorities.rds')
+# Base R; no packages required to load the data.
+voters <- readRDS("data/track4/voter_issues.rds")
+issue_columns <- grep("^issues_", names(voters), value = TRUE)
+issue_columns <- setdiff(issue_columns, "issues_selected")
+issue_matrix <- as.matrix(voters[issue_columns])
+
+# Alternative: read CSV directly from ZIP without expanding it on disk.
+voters_csv <- read.csv(unz("data/track4/voter_issues_csv.zip", "voter_issues.csv"),
+                       colClasses = c(su_id = "character"), na.strings = "")
 ```
 
-Groups: all registered voters, Republican candidate supporters, Democratic candidate supporters. The measure is the percentage calling each issue **very important** to their congressional vote. Percentages retain the source's rounding. The chart JSON was extracted programmatically and checked against the corresponding HTML table. `dictionary.csv` documents the variables and `../raw/track4/provenance.json` records source details and hashes.
+The starter contains `su_id`, `chep_weight`, state, likely-voter status, reported/intended House choice, party identification, ideology, age group, gender, education, race/ethnicity (`raceth4`, four categories), income, **12 binary issue indicators**, **six issue disagreement questions**, and `issues_selected`. `dictionary.csv` maps lowercase cleaned names to original fields; `response_options.csv` records original category codes and labels.
 
-This is an optional smaller visualization exercise: compare issue priorities, compute percentage-point gaps or identify issues important across groups. The 48 rows are published estimates, not 48 survey respondents. Multiple issues can be important to the same person, so percentages do not sum to 100 across issues. All registered voters overlaps the two supporter groups, and the two supporter groups do not necessarily exhaust all registered voters.
+The broad race/ethnicity field avoids much of the disclosure suppression in the detailed source field.
 
-**This is a pre-election survey, not an exit poll or an actual vote-choice dataset.** It does not show which issues caused the election result. It lacks respondent-level joint answers, item/group sample sizes, standard errors and covariance. Do not fit individual-level predictive models, infer significance from rounded gaps alone, or substitute the full survey sample size for subgroup denominators. [Methodology](https://www.pewresearch.org/politics/2026/10/08/midterms-2026-methodology/).
+Cleaning: retain every respondent; preserve ID as text; validate finite positive weights; keep issue indicators as integer 0/1; label other coded categories as factors in RDS; map source categories containing SKIPPED, REFUSED, DISCLOSURE or NOT ASKED to NA; sort by ID. No imputation. Source codes and distinctions remain available in the full archive. CSV uses readable factor labels and blanks for missing values.
 
-The pasted NBC/Mehlman vote-by-issue numbers were not included: the supplied PDF could not be retrieved through the web tool and those figures were not independently verified. Mixing them into this table would also combine different questions and populations.
+## Interpretation
 
-Rebuild the tidy exports offline with `Rscript scripts/prepare_track4.R`. Refresh from the publisher with `python3 scripts/download_track4.py`, then rerun preparation. Original published figures remain unchanged; no missing data were imputed and no participant analysis results are included.
+- The issue question asks for the **top three** among 12 issues. Not selected does not mean opposed or unimportant. The selection cap affects correlations and association rules.
+- All 113,020 records remain; 282 selected no issues. Treat those records explicitly when defining a basket-analysis denominator; do not silently assume indifference.
+- Six `diffview_*` items ask whether the respondent could vote for a candidate with a different position on that issue. These offer an additional set of categorical associations.
+- `housevote` combines reported/intended choice in a pre-election survey; it is not a validated vote or an official result. Registered voters include nonvoters.
+- Use `chep_weight` for population summaries. Standard `arules::apriori()` support/confidence/lift are unweighted; label them sample descriptions, or calculate weighted measures separately.
+- Keep missing values distinct from no/false. Factor codes are not meaningful numeric scales. Some full-survey questions are restricted to states or subsets; consult the questionnaire.
+- NORC weights may be revised against final election counts. Everyone should use this frozen snapshot.
+- Discoveries need held-out confirmation and sensitivity checks; party composition can explain apparent issue bundles. Association is not causation.
+
+## Reproduce and verify
+
+`Rscript scripts/prepare_track4.R` regenerates the starter from the archived CSV and codebook offline. Requires dplyr/readr; participant loading uses base R. `python3 scripts/download_track4.py` refreshes the upstream snapshot and may change results. Provenance and hashes: `../raw/track4/provenance.json` and root `checksums.sha256`.
+
+`validation/track4_report.txt` records dimensions, keys, codes, weights and complete CSV/RDS round-trip checks; `validation/track4_missingness.csv` records missingness. Private example analyses are not published.
+
+Track 4 download sizes: starter RDS **1.52 MB**, starter CSV ZIP **2.97 MB**, full source CSV ZIP **15.12 MB** (original CSV **88.18 MB**). Sizes are decimal MB, rounded.
